@@ -4,7 +4,7 @@
       Nuxt Diary App
     </el-menu-item>
     <el-menu-item index="2" :route="{ path: '/posts/' }">投稿一覧</el-menu-item>
-    <no-ssr>
+    <client-only>
       <el-menu-item
         index="4"
         style="float:right;"
@@ -29,7 +29,7 @@
       >
         新規投稿
       </el-menu-item>
-    </no-ssr>
+    </client-only>
   </el-menu>
 </template>
 
